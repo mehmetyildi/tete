@@ -1,0 +1,82 @@
+@import "basics/media";
+@import "basics/devices";
+@import "basics/colors";
+@import "basics/basicMixins";
+@import "basics/fonts";
+@import "basics/helpers";
+@import "header";
+@import "footer";
+@import "index";
+
+body{
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.sectionTitle{
+	background:$red;
+	color:$white;
+	font-weight:300;
+	font-size:32px;
+	display: inline-block;
+	padding:2px 10px 2px 4px;
+	min-width:250px;
+}
+
+.contentRow{
+	padding:30px 0;
+	p{
+		font-size: 15px;
+		font-weight: 400;
+	}
+}
+
+.plusIcon{
+	width:30px;
+	height:31px;
+	display:block;
+	background: url('../img/ui/plus.jpg') no-repeat center center;
+	
+}
+#about-slider{
+	li{
+		position:relative;
+	}
+}
+.content-slider{
+	.plusIcon{
+		position:absolute;
+		bottom: 10px; 
+		right:10px;
+	}
+}
+
+.relative{
+	.plusIcon{
+		position:absolute;
+		bottom: 10px; 
+		right:10px;
+	}
+}
+
+.grayBg{
+	background:#f4f4f4;
+}
+
+.tableTitle{
+	font-weight:bold;
+	font-size:17px;
+	color: $red;
+	padding:2px 6px;
+}
+.darkGrayBg{
+	background:#e7e8e9;
+}
+.lightGrayBg{
+	background:#f4f4f4;
+}
+.tableDescription{
+	font-weight:bold;
+	font-size:17px;
+	color: $body;
+	padding:2px 6px;
+}

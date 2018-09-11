@@ -1,0 +1,247 @@
+#full-width-slider {
+  	width: 100%;
+  	color: #000;
+}
+.coloredBlock {
+  	padding: 12px;
+  	background: rgba(255,0,0,0.6);
+  	color: #FFF;
+   	width: 200px;
+   	left: 20%;
+   	top: 5%;
+}
+.infoBlock {
+  	position: absolute;
+  	max-width: 25%;
+  	padding-bottom: 0;
+  	background: #FFF;
+  	background: rgba(255, 222, 23, 0.8);
+  	overflow: hidden;
+  	padding: 20px;
+  	text-align: right;
+  	bottom: auto !important;
+  	top:15%;
+  	h1{
+  		margin-top: 10px; 
+  		text-transform: none; 
+  		line-height: 50px;
+  		font-size: 36px;
+  	}
+}
+.infoBlockLeftBlack {
+  	color: $white;
+  	background: $red;
+  	background: rgba(#be0022,0.75);
+  	right: auto;
+}
+.infoBlock h4 {
+  	font-size: 20px;
+  	line-height: 1.2;
+  	margin: 0;
+  	padding-bottom: 3px;
+}
+.infoBlock p {
+  	font-size: 14px;
+  	margin: 4px 0 0;
+}
+.infoBlock a {
+  	color: #FFF;
+  	text-decoration: underline;
+}
+.photosBy {
+  	position: absolute;
+  	line-height: 24px;
+  	font-size: 12px;
+  	background: #FFF;
+  	color: #000;
+  	padding: 0px 10px;
+  	position: absolute;
+  	left: 12px;
+  	bottom: 12px;
+  	top: auto;
+  	border-radius: 2px;
+  	z-index: 25; 
+} 
+.photosBy a {
+  	color: #000;
+}
+
+
+@media screen and (min-width:960px) and (min-height:660px) {
+  	.heroSlider .rsOverflow,
+  	.royalSlider.heroSlider {
+      	/*height: 520px !important;*/
+  	}
+}
+
+@media screen and (min-width:960px) and (min-height:1000px) {
+    .heroSlider .rsOverflow,
+    .royalSlider.heroSlider {
+        height: 660px !important;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  	.royalSlider.heroSlider,
+  	.royalSlider.heroSlider .rsOverflow {
+    	height: 300px !important;
+  	}
+  	.infoBlock {
+	    padding: 10px;
+	    height: auto;
+	    max-height: 100%;
+	    min-width: 40%;
+	    left: 5px;
+	    top: 5px;
+	    right: auto;
+	    font-size: 12px;
+  	}
+  	.infoBlock h3 {
+     	font-size: 14px;
+     	line-height: 17px;
+  	}
+}
+
+.homeCarousel{
+	background:$black;
+	padding:70px 0 20px 0;
+	
+}
+.anyCarousel{
+	background:$black;
+	padding:20px 0 20px 0;
+}
+.homeOpeningSlider{
+	width: 100%;
+	padding:0 40px 40px;
+	
+	
+}
+
+#content-slider li{
+	
+	
+    text-align: center;
+    color: $red;
+    span.lSCaption{
+    	font-size: 14px;
+    	text-align: center;
+    	display: block;
+    	color:$body !important;
+    }
+    &:after{
+    	display: inline-block;
+    	height:50px;
+    	border-right:1px solid $red;
+    }
+}
+.lSSlideWrapper .lSSlide{
+	min-height:190px !important;
+}
+.content-slider h3 {
+    margin: 0;
+    padding: 70px 0;
+}
+
+
+#lSActionLeft{
+	background: url('../img/ui/left.png') no-repeat center center;
+	color:$red;
+	font-size:60px;
+	cursor:pointer;
+	opacity:1;
+	left:-25px;
+	position:absolute;
+	top: 50%;
+	height:44px;
+	width:31px;
+	margin-top: -40px; 
+	@include xs{
+		top:auto;
+		bottom:-10px;
+		left:50%;
+		margin-left: -50px;
+	}
+	@include sm{
+		top:auto;
+		bottom:-10px;
+		left:50%;
+		margin-left: -50px;
+	}
+}
+#lSActionRight{
+	background: url('../img/ui/right.png') no-repeat center center;
+	color:$red;
+	font-size:60px;
+	cursor:pointer;
+	position:absolute;
+	right:-25px;
+	opacity:1;
+	top: 50%;
+	height:44px;
+	width:31px;
+	margin-top: -40px; 
+	@include xs{
+		top:auto;
+		bottom:-10px;
+		right:50%;
+		margin-right: -50px;
+	}
+	@include sm{
+		top:auto;
+		bottom:-10px;
+		right:50%;
+		margin-right: -50px;
+	}
+}
+
+#lSActionLeft2{
+	background: url('../img/ui/left.png') no-repeat center center;
+	color:$red;
+	font-size:60px;
+	cursor:pointer;
+	opacity:1;
+	left:-25px;
+	position:absolute;
+	top: 60%;
+	height:44px;
+	width:31px;
+	margin-top: -40px; 
+	@include xs{
+		top:auto;
+		bottom:-10px;
+		left:50%;
+		margin-left: -50px;
+	}
+	@include sm{
+		top:auto;
+		bottom:-10px;
+		left:50%;
+		margin-left: -50px;
+	}
+}
+#lSActionRight2{
+	background: url('../img/ui/right.png') no-repeat center center;
+	color:$red;
+	font-size:60px;
+	cursor:pointer;
+	position:absolute;
+	right:-25px;
+	opacity:1;
+	top: 60%;
+	height:44px;
+	width:31px;
+	margin-top: -40px; 
+	@include xs{
+		top:auto;
+		bottom:-10px;
+		right:50%;
+		margin-right: -50px;
+	}
+	@include sm{
+		top:auto;
+		bottom:-10px;
+		right:50%;
+		margin-right: -50px;
+	}
+}
+.lSAction > .lSPrev, .lSAction > .lSNext{display:none;}
